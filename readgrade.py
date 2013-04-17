@@ -20,4 +20,4 @@ def count_number(grades):
         count_grade_number[grade_range]=count_grade_number[grade_range]+1
     return count_grade_number
         
-    
+

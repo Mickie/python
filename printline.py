@@ -20,7 +20,7 @@ for i in range(0,10):
     grade_low=i*10
     grade_high=i*10+9
     pic="*"*count_number[i]
-    hisfile.write(str(grade_low)+"-"+str(grade_high)+":" )
+    hisfile.write(str(grade_low)+"-"+str(grade_high)+" :" )
     hisfile.write(pic)
     hisfile.write("\n")
 
