@@ -33,7 +33,7 @@ Dumplings R Us': '71', 'Deep Fried Everything': '52', 'Queen St.Cafe': '82'}
 >>>price_to_names={'$': ['Queen St.Cafe', 'Dumplings R Us', 'Deep Fried Everything'],
 '$$$': ['Georgie Porgie'], '$$': ['Mexican Grill'], '$$$$': []}
 
->>cuisine_to_names={' Thai': ['Queen St.Cafe'], 'Pub Food': ['Georgie Porgie', 'Deep Fried Everything'],
+>>cuisine_to_names={'Thai': ['Queen St.Cafe'], 'Pub Food': ['Georgie Porgie', 'Deep Fried Everything'],
 'Mexican': ['Mexican Grill'], 'Canadian': ['Georgie Porgie'],
 'Chinese': ['Dumplings R Us'], 'Malaysian': ['Queen St.Cafe']}
 
@@ -77,9 +77,8 @@ Dumplings R Us': '71', 'Deep Fried Everything': '52', 'Queen St.Cafe': '82'}
             
         line=file.readline()
         line=file.readline()
-    print(name_to_rating)
-    print(price_to_names)
-    print(cuisine_to_names)
+    return(name_to_rating,price_to_names,cuisine_to_names)
+   
         
         
         

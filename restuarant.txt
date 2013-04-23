@@ -8,7 +8,7 @@ Canadian,Pub Food
 Queen St.Cafe
 82
 $
-Malaysian, Thai
+Malaysian,Thai
 
 Dumplings R Us
 71
@@ -22,5 +22,10 @@ Mexican
 
 Deep Fried Everything
 52
+$
+Pub Food
+
+American Grill
+80
 $
 Pub Food
