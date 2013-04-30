@@ -12,11 +12,13 @@ def recommend(thisfile,price,cuisines_list):
     find restaurants in file that are in the price range and serve the cuisine
     in the cuisine list.Return a list of lists of the form
     [rating%,resturant name],sorted by rating%.
-    >>>recommend(thisfile,"$","Pub Food")
-    the final results is [('American Grill', 80.0), ('Deep Fried Everything', 52.0)]
+    >>>recommend(thisfile,"$",{"Pub Food","Thai"})
+    the final results is [('Quenn St.Cafe',82),('American Grill', 80.0), ('Deep Fried Everything', 52.0)]
     """ 
     
     result={}
+    names_matching_cuisine=[]
+    
     final_result={}
     result_sorted={}
     #Read the file and build the data structures.
@@ -29,11 +31,15 @@ def recommend(thisfile,price,cuisines_list):
     print(cuisine_to_names)
     #get the list of restuarant names that in this price range
     names_matching_price=price_to_names[price]
-    print(price)
+    
     print (names_matching_price)
     
     #get the list of restuarant names that server the cuisine
-    names_matching_cuisine=cuisine_to_names[cuisines_list]
+    for item in cuisines_list:
+        thename=cuisine_to_names[item]
+        names_matching_cuisine+=thename
+    
+    
     print(names_matching_cuisine)
     #check get a new list of restuarant names that both in names_matching_price and names
     #_matching_cuisine
